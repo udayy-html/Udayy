@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <style>
+        /* Reset default style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #007BFF;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://source.unsplash.com/1600x500/?technology,web') center/cover no-repeat;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Button */
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Selamat Datang</h1>
+        <p>Website sederhana ini dibuat dengan HTML, CSS, dan JavaScript</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="card">
+            <h2>Belajar HTML</h2>
+            <p>HTML adalah bahasa dasar untuk membuat struktur website. Dengan HTML, kita dapat membuat teks, gambar, tabel, dan banyak elemen lainnya.</p>
+        </div>
+        <div class="card">
+            <h2>Belajar CSS</h2>
+            <p>CSS digunakan untuk mempercantik tampilan website, mengatur warna, font, jarak, dan layout halaman.</p>
+        </div>
+        <div class="card">
+            <h2>Belajar JavaScript</h2>
+            <p>JavaScript menambahkan interaktivitas pada website, seperti membuat tombol bisa diklik, animasi, dan banyak lagi.</p>
+            <button onclick="tampilkanPesan()">Klik untuk Pesan</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Website Sederhana | Dibuat untuk belajar
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function tampilkanPesan() {
+            alert("Halo! Terima kasih sudah berkunjung ke website ini.");
+        }
+    </script>
+
+</body>
+</html>
